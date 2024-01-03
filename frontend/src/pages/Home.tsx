@@ -20,7 +20,7 @@ const Home = () => {
     dispatch(fetchProducts());
   }, [dispatch]);
 
-  const latestProducts = products.slice().sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()).slice(0, 3); // only 3 recently added products
+  const latestProducts = products.slice().sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()).slice(0, 3);
   const iphone14 = products.find((product) => product.name === 'Iphone 14');
 
   const handleAddToCart = (product: Product) => {
