@@ -1,0 +1,351 @@
+/*login and signup pages*/
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #5271FF;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #5271FF;   
+}
+
+.login {
+    display: flex;
+    width: 100%;
+}
+
+.login-img {
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem; padding-bottom: 1rem;
+}
+
+.signup-img {
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3rem; padding-bottom: 3rem;
+}
+
+.login-details {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #F5F7F8;
+}
+
+.login-details-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 4rem;
+}
+
+.login-details-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.login-details-title p {
+    font-size: 0.9rem;
+}
+
+.login-details-input {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.login-details-input input {
+    padding: 1rem;
+    width: 50%;
+    border-left: none; border-right: none; border-top: none;
+    border-color: #333;
+    margin-bottom: 1rem;
+    background-color: #F5F7F8;
+}
+
+.login-details-input input::placeholder {
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.login-details-input input[type='password'] {
+    margin-bottom: 0;
+}
+
+.forgot-password-link {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+    text-align: right;
+    width: 58%;   
+}
+
+.forgot-password-link p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #5271FF;
+}
+
+.login-details-btn {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.login-details-btn button {
+    width:55%; height: 3rem;
+    padding: 0.4rem;
+    border-width: 0;
+    border-style: none;
+    border-radius: 30px;
+    background-color: #5271FF;
+    color: white;
+    font-size: 1rem;
+}
+
+.login-details-btn button:hover {
+    border-width: 0;
+    border-style: none;
+    background-color: #333;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.login-details-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.login-details-signup p {
+    font-size: 0.8rem;
+    padding-bottom: 2rem;
+}
+
+.login-details-signup-link {
+    text-decoration: none !important;
+    color: #5271FF;
+    font-weight: bold;
+    padding-left: 0.3rem;
+}
+
+.error-message {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 55%;
+}
+
+.login-error-message {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 55%;
+    padding-top: 1rem;
+}
+
+.login-error-message p {
+    font-size: 0.8rem;
+    color: red;
+}
+
+.error-message p {
+    font-size: 0.8rem;
+    color: red;
+}
+
+.user-name-div {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: auto; margin-right: auto;
+    width: 100%;
+}
+
+.signup-details-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 4rem;
+}
+
+.signup-details-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+}
+
+@media (max-width: 80rem) {
+    .signup-details-title h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 60rem) {
+    .signup-details-title h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 50rem) {
+    .login-img {
+        display: none;
+    }
+    .signup-img {
+        display: none;
+    }
+    .login-details-title h1 {
+        font-size: 1.8rem;
+    }
+    .signup-details-title h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/*activate account page*/
+
+.activate-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #5271FF;
+}
+
+.activate-main-content {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 70%;
+    background-color: #F5F7F8;
+}
+
+.activation-title {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.activation-text {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    font-size: 1rem;
+    color: #333;
+}
+
+.activation-btn {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.activation-btn button {
+    width:35%; height: 3rem;
+    padding: 0.4rem;
+    border-width: 0;
+    border-style: none;
+    border-radius: 30px;
+    background-color: #5271FF;
+    color: white;
+    font-size: 1rem;
+}
+
+.activation-btn button:hover {
+    border-width: 0;
+    border-style: none;
+    background-color: #333;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/*forgot and reset password pages*/
+
+.forgot-password-input {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.forgot-password-input input {
+    padding: 1rem;
+    width: 50%;
+    border-left: none; border-right: none; border-top: none;
+    border-color: #333;
+    margin-bottom: 1rem;
+    background-color: #F5F7F8;
+}
+
+.forgot-password-input input::placeholder {
+    color: #333;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.forgot-password-btn {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.forgot-password-btn button {
+    width:35%; height: 3rem;
+    padding: 0.4rem;
+    border-width: 0;
+    border-style: none;
+    border-radius: 30px;
+    background-color: #5271FF;
+    color: white;
+    font-size: 1rem;
+}
+
+.forgot-password-btn button:hover {
+    border-width: 0;
+    border-style: none;
+    background-color: #333;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.reset-password-title {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}

@@ -1,0 +1,144 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #dddddd;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+  
+th {
+  background-color: #EFF5F5;
+}
+
+td {
+  background-color: white;
+  font-size: 0.9rem;
+}
+
+.users-table-functions {
+  cursor: pointer;
+}
+
+.categories-table-functions {
+  cursor: pointer;
+}
+
+.products-table-functions {
+  cursor: pointer;
+}
+
+.users-table-id {
+  color: #7D7C7C;
+}
+
+.products-table-price {
+  font-weight: bolder;
+}
+
+.category-update-btn {
+  width: 4rem;
+  padding: 0.4rem;
+  border-width: 0;
+  border-style: none;
+  border-radius: 15px;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 60rem) {
+  table, thead, tbody, td, tr {
+    display: block;
+  }
+  table {
+    background-color: #D8D9DA;
+  }
+  th {
+    display: none;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr { margin: 0 0 0.1rem 0; }
+  td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 40%;
+  }
+  td:before {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bolder;
+  }
+  .users-table-id:nth-of-type(1):before { content: "Id"; }
+  .users-table:nth-of-type(2):before { content: "Name"; }
+  .users-table:nth-of-type(3):before { content: "Email"; }
+  .users-table:nth-of-type(4):before { content: "Phone"; }
+  .users-table:nth-of-type(5):before { content: "Address"; }
+  .users-table-functions:nth-of-type(6):before { content: "Ban"; }
+  .users-table-functions:nth-of-type(7):before { content: "Role"; }
+  .categories-table:nth-of-type(1):before { content: "Name"; }
+  .categories-table-btn:nth-of-type(2):before { content: "Update"; }
+  .orders-table-id:nth-of-type(1):before { content: "Order Id"; }
+  .orders-table:nth-of-type(2):before { content: "Products"; }
+  .orders-table:nth-of-type(3):before { content: "User/Visitor"; }
+  .orders-table:nth-of-type(4):before { content: "Status"; }
+  .orders-table:nth-of-type(5):before { content: "Created At"; }
+}
+
+@media screen and (max-width: 70rem) {
+  .products-t td, .products-t tr {
+    display: block;
+  }
+  .products-t {
+    background-color: #D8D9DA;
+  }
+  .products-t th {
+    display: none;
+  }
+  .products-t thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .products-t tr { margin: 0 0 0.1rem 0; }
+  .products-t td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 40%;
+  }
+  .products-t td:before {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bolder;
+  }
+  .products-table-btn button{
+    width: 4rem;
+    cursor: pointer;
+  }
+  .products-table:nth-of-type(1):before { content: "Name"; }
+  .products-table:nth-of-type(2):before { content: "Image"; }
+  .products-table-description:nth-of-type(3):before { content: "Description"; }
+  .products-table:nth-of-type(4):before { content: "Category"; }
+  .products-table-price:nth-of-type(5):before { content: "Price"; }
+  .products-table:nth-of-type(6):before { content: "Quantity"; }
+  .products-table:nth-of-type(7):before { content: "Sold"; }
+  .products-table:nth-of-type(8):before { content: "Shipping"; }
+  .products-table-btn:nth-of-type(9):before { content: "Update"; }
+}
