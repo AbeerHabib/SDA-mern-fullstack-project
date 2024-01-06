@@ -1,14 +1,3 @@
-`This repository is meant to be empty. You currently have a working frontend and backend in two different repositories.`
-
-For this assignment, you would keep them the way they are (separated), meaning you would run them separately and have them talk to each other.
-
-This repository is to open a PR and leave a comment to share the links of your frontend and backend PRs that you already have (from previous assignments).
-If you don't have a backend PR then you should create one from your own backend copy (the one you forked from your team lead).
-
-If you didn't fork from your team lead backend repo. you should fork from your team lead backend repo and open a PR here (Integrify's repository).
-
-`PS: OPEN A PR FROM DAY ONE`
-
 ## Level 1: Basic Requirements
 ### `Follow the steps below in the order displayed.`
 Connect the basic endpoints you have created to the frontend. 
